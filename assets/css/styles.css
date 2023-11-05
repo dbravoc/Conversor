@@ -1,7 +1,9 @@
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
+    padding: 10px;
+    margin: 5px;
 }
 
 .layout{
@@ -23,6 +25,9 @@ body{
     align-items: center;
     justify-content: center;
     font-size: xx-large;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #4CAF50;
+
 }
 
 .main-input{
@@ -40,6 +45,7 @@ footer{
     grid-area: footer-layout;
     align-items: center;
     justify-content: center;
+    border-top: 1px solid #4CAF50;
 }
 
 .texto{
@@ -64,7 +70,7 @@ footer{
     border-radius: 5px;
     cursor: pointer;
     font-size: larger;
-    width: 30%;
+    width: 80%;
 }
 
 input{
@@ -78,4 +84,8 @@ input{
     font-family: 'Poppins', sans-serif;
     color: #4CAF50;
 
+}
+
+a{
+    color: #4CAF50;
 }
