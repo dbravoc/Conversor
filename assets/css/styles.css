@@ -1,0 +1,21 @@
+html{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    grid-template-areas:
+    "body-layout"
+    "footer-layout"
+    ;
+}
+
+body{
+    display: grid;
+    grid-area: "body-layout";
+}
+
+footer{
+    display: flex;
+    grid-area: "footer-layout";
+
+
+}
