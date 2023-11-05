@@ -1,34 +1,48 @@
 <html>
 <head>
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
 </head>
 
+<div class="layout">
 <body>
-    <div>
+    <div class="header">
         Conversor de monedas Chileno
     </div>
-    <div>
-        <div>
-            Pesos CLP
+    <div class="main-input">
+        <div class="cuadro">
+            <div class="texto">
+                Monto en pesos CLP
+            </div>
+            <div class="texto">
+                <input type="number">
+            </div>
         </div>
-        <input type="text">
-        <div>
-            Moneda a convertir
+        <div class="cuadro">
+            <div class="texto">
+                Moneda a convertir
+            </div>
+            <div class="texto">
+                <input type="text">
+            </div>
         </div>
-        <input type="text">
-        <button>Buscar</button>
-        <div>
+        <div class="texto">
+            <button class="boton">Calcular</button>
+        </div>
+        <div class="Resultado">
             Resultado: 
         </div>
     </div>
-    <div>
+    <div class="main-grafico">
         Historial moneda seleccionada
     </div>
 </body>
 
 <footer>
-DBC
+    DBC
 </footer>
-
+</div>
 
 </html>

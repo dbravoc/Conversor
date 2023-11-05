@@ -1,21 +1,81 @@
-html{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
-    grid-template-areas:
-    "body-layout"
-    "footer-layout"
-    ;
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #fff;
 }
 
-body{
+.layout{
     display: grid;
-    grid-area: "body-layout";
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% auto auto 10%;
+    grid-template-areas:
+    "header-layout"
+    "input-layout"
+    "grafico-layout"
+    "footer-layout";
+    min-height: 100%;
+    
+}
+
+.header{
+    display: flex;
+    grid-area: header-layout;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.main-input{
+    display: grid;
+    grid-area: input-layout;
+}
+
+.main-grafico{
+    display: grid;
+    grid-area: grafico-layout;
 }
 
 footer{
     display: flex;
-    grid-area: "footer-layout";
+    grid-area: footer-layout;
+    align-items: center;
+    justify-content: center;
+}
 
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+}
+
+.cuadro{
+    margin: 10px;
+    padding: 10px;
+}
+
+.boton{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    width: 30%;
+}
+
+input{
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: larger;
+    width: 80%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #4CAF50;
 
 }
