@@ -1,58 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
 </head>
 
-<div class="layout">
 <body>
-    <div class="header">
-        Conversor de monedas Chileno
-    </div>
-    <div class="main-input">
-        <div class="cuadro">
-            <div class="texto">
-                Monto en pesos CLP
-            </div>
-            <div class="texto">
-                <input type="number">
-            </div>
+    <div class="layout">
+        <div class="header">
+            Conversor de monedas Chileno
         </div>
-        <div class="cuadro">
-            <div class="texto">
-                Moneda a convertir
+        <div class="main-input">
+            <div class="cuadro">
+                <div class="texto">
+                    Monto en pesos CLP
+                </div>
+                <div class="texto">
+                    <input type="number" id="monto-input">
+                </div>
             </div>
-            <div class="texto">
-                <input type="text">
+            <div class="cuadro">
+                <div class="texto">
+                    Moneda a convertir
+                </div>
+                <div class="texto">
+                    <select id="moneda-input"></select>
+                </div>
             </div>
-        </div>
-        
-        <div class="cuadro">
-            <div class="texto">
-                <button class="boton">Calcular</button>
-            </div>
-        </div>
-        <div class="cuadro">
-            <div class="texto">
-                Resultado
-            </div>
-            <div class="texto">
-                <input type="text">
-            </div>
-        </div>
-    </div>
-    <div class="main-grafico">
-        <div class="texto">
-        Historial moneda seleccionada
-        </div>
-    </div>
-</body>
 
-<footer>
-    <a href="https://www.linkedin.com/in/bravocisterna/">David Bravo Cisterna</a>l
-</footer>
-</div>
+            <div class="cuadro">
+                <div class="texto">
+                    <button class="boton" id="calcular-button">Calcular</button>
+                </div>
+            </div>
+            <div class="cuadro">
+                <div class="texto">
+                    Resultado
+                </div>
+                <div class="texto">
+                    <input type="text" id="resultado-input" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="main-grafico cuadro">
+            <div class="texto">
+                Historial moneda seleccionada
+            </div>
+            <div class="grafico">
+                <canvas id="currencyChart"></canvas>
+            </div>
+        </div>
+        <footer>
+            <a href="https://www.linkedin.com/in/bravocisterna/">David Bravo Cisterna</a>
+        </footer>
+    </div>
+<script src="assets/js/script1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
 
 </html>
